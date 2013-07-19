@@ -1,0 +1,18 @@
+{namespace test}
+
+/**
+ * Display a list of boats in the database.
+ * @param boats A list of boats.
+ */
+{template .HelloWorld}
+
+    {call shared.Header}
+      {param pageTitle: 'Hello World' /}
+    {/call}
+    
+	<h2>Boats</h2>
+	<p>A list of boats in the database:</p>
+    {$boats} / {$test2}
+    
+	{call shared.Footer /}
+{/template}
