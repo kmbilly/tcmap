@@ -7,6 +7,7 @@ import javax.ws.rs.core.Application;
 
 import com.googlecode.htmleasy.HtmleasyProviders;
 import com.kmstudio.tconmap.controller.HelloWorldController;
+import com.kmstudio.tconmap.controller.MainController;
 
 /**
  * Register our JAX-RS annotated classes and Htmleasy.  We'll do this explicitly rather 
@@ -21,6 +22,7 @@ public class MyApp extends Application {
 	      
 	      // Add my own JAX-RS annotated classes
 	      myServices.add(HelloWorldController.class);
+	      myServices.add(MainController.class);
 	      
 	      // Add Htmleasy Providers
 	      myServices.addAll(HtmleasyProviders.getClasses());
