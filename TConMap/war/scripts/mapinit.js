@@ -2,7 +2,7 @@ function initialize() {
     var mapOptions = {
       center: new google.maps.LatLng(17.43, 117.25),
       zoom: 6,
-      mapTypeId: google.maps.MapTypeId.HYBRID,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
       panControl: false,
       zoomControl: true,
       mapTypeControl: false,
